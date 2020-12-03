@@ -1,0 +1,5 @@
+python 1_compose_images.py --input_dir ./datasets/input --output_dir ./datasets/output --count 2000 --width 640 --height 360
+
+python 2_create_json.py -md ./datasets/output/mask_definitions.json -di ./datasets/output/dataset_info.json
+
+python 3_txt_labels_trainval.py
